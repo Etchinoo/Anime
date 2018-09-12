@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime4Life</title>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+<!-- fon awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+<!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <!-- scrollup -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <!-- home -->
+    <nav>
+        <h3>Anime Is Life</h3>
+        <img src="assets/images/shurekin.png" alt="shurekin">
+        <button id="show-more"><i class="fas fa-bars"></i></button>
+        <ul id="show">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#top">Top 5</a></li>
+        </ul>
+    </nav>
+    <!-- history -->
+    <section id="home" class="slider cover animated bounceInDown">
+        <img src="assets/images/jiraya.jpg" alt="jiraya">
+        <p>"A Shinobi's life is not measured by how they lived
+             but rather what they managed to accomplish before their death."<br> -Jiraya</p>
+        </section>
+        <section id="history" class="old">
+            <h2>The History Of Anime</h2>
+            <img class="old1 animated bounceInLeft" src="assets/images/oldanime1.jpg" alt="Anime">
+            <img class="old2 animated bounceInRight" src="assets/images/oldanime2.jpg" alt="Anime">
+            <p>"The history of anime can be traced back to the start of the 20th century,
+                with the earliest verifiable films dating from 1917.<br>
+                The first generation of animators in the late 1910s included "Ōten Shimokawa",
+                "Jun'ichi Kōuchi" and "Seitaro Kitayama", commonly referred to as the "fathers" of anime.
+                <br> Propaganda films, such as "Momotarō no Umiwashi (1943)" and 
+                "Momotarō Umi no Shinpei (1945)", the latter being the first anime feature film, 
+                were made during World War II. During the 1970s, anime developed further, with the inspiration of Disney animators,
+                separating itself from its Western roots, and<span id="section-show">developing distinct genres such as mecha and its super robot subgenre.
+                Typical shows from this period include "Astro Boy", "Lupin III" and "Mazinger Z". 
+                During this period several filmmakers became famous, especially "Hayao Miyazaki" and "Mamoru Oshii".
+                In the 1980s, anime became mainstream in Japan,
+                experiencing a boom in production with the rise in popularity of anime."</span>
+                <button id="button-show">Show More</button></p>                
+        </section>
+        <!-- top5 -->
+        <div id="top">
+            <h2>Top 5 Anime</h2>
+        </div>
+        <div class="deathnote animated bounceInUp">
+            <section>
+                <h2> No.1 Death Note</h2>
+                <p>The story follows <b>Light Yagami</b>, a high school student who stumbles across a mysterious otherworldly notebook: the "Death Note",
+                    which belonged to the Shinigami <b>Ryuk</b>,
+                    and grants its user the power to kill anyone whose name and face he knows.</p>
+            </section>
+        </div>
+        <div class="fma animated bounceInUp">
+            <section>
+                <h2>No.2 Full Metal Alchemist</h2>
+                <p>the series follows the adventures of brothers Edward and Alphonse Elric, who are searching for the Philosopher's Stone so they can regain the bodies they lost in a failed attempt to bring their dead mother back to life.</p>
+            </section>
+        </div>
+        <div class="aot animated bounceInUp">
+            <section>
+                <h2>No.3 Attack On Titan</h2>
+                <p>The story begins as we venture into the Walls of humanity and meet our main protagonists, Eren, Mikasa and Armin. However, a mysterious threat known as the Titans cause a daily threat and our heroes soon learn of their terror as the Colossus Titan breaks through the gate.</p>
+            </section>
+        </div>
+        <div class="naruto animated bounceInUp">
+            <section>
+                <h2>No.4  Naruto</h2>
+                <p>the Nine-Tails attacked Konoha destroying much of the village and taking many lives. The leader of the village, the Fourth Hokage sacrificed his life to seal the Nine-Tails into a newborn, Naruto Uzumaki. Orphaned by the attack, Naruto was shunned by the villagers, who out of fear and anger, viewed him as the Nine-Tails itself. Though the Third Hokage outlawed speaking about anything related to the Nine-Tails, the children.</p>
+            </section>
+        </div>
+        <div class="onepiece animated bounceInUp">
+            <section>
+                <h2>No.5 One Piece</h2>
+                <p>22 years ago, the Pirate King, Gol D. Roger, was executed. However, before his death he revealed to everyone that his treasure, the One Piece, was hidden at the end of the Grand Line. This inspired people to become pirates and sail toward the treasure, beginning the Great Age of Pirates.</p>
+            </section>
+        </div>
+        <footer class="animated bounceInUp">
+            <p>All Rights Reserved &copy;Hesham .inc</p>
+        </footer>        
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {    
+    if (this.hash !== "") {      
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
