@@ -13,7 +13,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Merriweather', serif;
     color: white;
     margin:0 auto;
 }
@@ -74,7 +74,7 @@ nav ul li{
     display: inline;
 }
 nav a{
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 20px;
     color: white;
     text-decoration: none;
@@ -181,7 +181,7 @@ p .show {
     border-radius: 12px;
     background: rgba(0, 0, 0, .5);
     border: none;
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 20px;
     width: 200px;
     height: 50px;
@@ -451,10 +451,9 @@ footer{
     }
 }
 @media screen and (max-width: 500px) {
-    nav button{
-        display: none;
-    }
     nav ul {
+        margin-top: 7px;
+        width: auto;
         opacity: 1;
     }
     .slider>img{
@@ -476,6 +475,15 @@ footer{
         opacity: 0;
     }
     #top{
+        margin: 100px auto;
+        margin-top: 300px;
+        width: 418px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #top{
+        margin: 100px auto;
+        margin-top: 400px;
         width: 418px;
     }
 }
