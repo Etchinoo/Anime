@@ -15,7 +15,6 @@ body{
     background-size: cover;
     font-family: 'Merriweather', serif;
     color: white;
-    margin:0 auto;
 }
 #myBtn {
     display: none;
@@ -142,7 +141,8 @@ nav .show{
     -moz-transition: all .5s ease-in-out 0s;
 }
 .old p{
-    background: rgba(0, 0, 0, .3);
+    background: url("../assets/images/bg.jpg");
+    background-position: center;
     font-size: 20px;
     color: #fff;
     text-align: justify;
@@ -198,11 +198,12 @@ p .show {
 /* Start Top5 */
 #top{
     background-color: rgba(0, 0, 0, .5);
-    width: 500px;
+    max-width: 500px;
     margin: 100px auto;
     padding: 10px;
     border-radius: 12px;
     text-align: center;
+    margin-top: 160px;
 }
 #top:hover{
     font-size: larger;
@@ -426,8 +427,14 @@ footer{
     box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
 }
 @media screen and (max-width:1200px) and (min-width:501px) {
+    body{
+        margin-left: 100px;
+    }
     .slider>img{
         opacity: 0;
+    }
+    .old{
+        max-width:370px;
     }
     .old>img {
         display: block;
@@ -437,8 +444,6 @@ footer{
         background-image: url("../assets/images/bg.jpg");
         background-size: cover;
         background-position: center;
-        width: 100%;
-        position: absolute;
     }
     .old>img{
         opacity: 0;
@@ -448,6 +453,9 @@ footer{
     }
     #top{
         margin-top: 50px;
+    }
+    #top h2{
+        max-width:375px;
     }
 }
 @media screen and (max-width: 500px) {
