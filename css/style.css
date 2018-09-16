@@ -60,6 +60,7 @@ nav h3:hover{
     color: skyblue;
 }
 nav button {
+    cursor: pointer;
     margin-right: 5px;
     text-shadow: 2px 2px 3px #fff;
     font-size: 22px;
@@ -147,7 +148,7 @@ nav .show{
     color: #fff;
     text-align: justify;
     position: absolute;
-    width: 30%;
+    max-width: 30%;
     margin-left: 34%;
     margin-bottom: 20px;
     margin-top: 0;
@@ -440,6 +441,7 @@ footer{
         display: block;
     }
     .old>p {
+        max-width: 100%;
         margin: 0 auto;
         background-image: url("../assets/images/bg.jpg");
         background-size: cover;
@@ -480,7 +482,7 @@ footer{
         background-image: url("../assets/images/bg.jpg");
         background-size: cover;
         background-position: center;
-        width: 100%;
+        max-width: 380px;
         position: absolute;
     }
     .old>img{
@@ -496,9 +498,18 @@ footer{
     .slider{
         max-width: 100%;
     }
+    .slider p{
+        margin-top: 0;
+    }
+    .old>p{
+        max-width: 340px;
+    }
     #top{
         margin: 100px auto;
         margin-top: 400px;
         max-width: 100%;
+    }
+    .fma section {
+        height: 68px;
     }
 }
