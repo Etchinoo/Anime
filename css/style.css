@@ -59,10 +59,9 @@ nav h3:hover{
     -moz-transition: all .5s ease-in-out 0s;
     color: skyblue;
 }
-nav button {
+nav span {
     cursor: pointer;
     margin-right: 5px;
-    text-shadow: 2px 2px 3px #fff;
     font-size: 22px;
     margin-top: 15px;
     border: none;
