@@ -1,3 +1,4 @@
+alert("this site is under maintanence and should be working in 2 days ty for being patient :)");
 var x = document.getElementById("show-more");
 var y = document.getElementById("show");
 
